@@ -1,0 +1,16 @@
+{
+  "name": "jobsearch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "tailwindcss -i ./app/assets/app.css -o public/styles.css --watch",
+    "build:tailwind": "tailwindcss -i ./app/assets/app.css -o public/styles.css"
+  },
+  "author": "Jeremy Winterberg",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.9",
+    "esbuild": "^0.21.5"
+  }
+}
