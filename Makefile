@@ -29,7 +29,7 @@ server:
 	--log.main_only true
 
 watch-assets:
-	@npx tailwindcss -i app/assets/app.css -o public/assets/styles.css --watch
+	@npx tailwindcss -i app/assets/app.css -o public/assets/style.css --watch
 
 watch-esbuild:
 	@npx esbuild app/assets/index.js --bundle --outdir=public/assets --watch
@@ -41,7 +41,7 @@ dev:
 	@make -j5 templ server watch-assets watch-esbuild sync_assets
 
 build:
-	@npx tailwindcss -i app/assets/app.css -o public/assets/styles.css
+	@npx tailwindcss -i app/assets/app.css -o public/assets/style.css
 	@npx esbuild app/assets/index.js --bundle --outdir=public/assets
 	@go build -o bin/app_prod cmd/app/main.go
 	@echo "compiled you application with all its assets to a single binary => bin/app_prod"
