@@ -10,8 +10,8 @@ A comprehensive platform empowering software engineers to effortlessly manage th
 
 - [x] Go
 - [x] Chi
-- [ ] HTMX
-- [ ] TailwindCSS
+- [x] HTMX
+- [x] TailwindCSS
 - [ ] Turso SQLite
 - [ ] Deployed to VPS - Dockerfile
 

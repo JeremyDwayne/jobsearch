@@ -4,13 +4,13 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "tailwind": "tailwindcss -i app/assets/app.css -o public/styles.css --watch",
-    "build:tailwind": "tailwindcss -i app/assets/app.css -o public/styles.css"
+    "watch": "tailwindcss build -i app/assets/app.css -o public/assets/styles.css --watch",
+    "build": "tailwindcss build -i app/assets/app.css -o public/assets/styles.css --minify"
   },
   "author": "Jeremy Winterberg",
   "license": "ISC",
   "dependencies": {
-    "tailwindcss": "^3.4.9",
-    "esbuild": "^0.21.5"
+    "esbuild": "^0.21.5",
+    "tailwindcss": "^3.4.9"
   }
 }

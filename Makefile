@@ -29,7 +29,7 @@ server:
 	--log.main_only true
 
 watch-assets:
-	@npx tailwindcss -i app/assets/app.css -o ./public/assets/styles.css --watch   
+	@npx tailwindcss -i app/assets/app.css -o ./public/assets/styles.css --watch
 
 watch-esbuild:
 	@npx esbuild app/assets/index.js --bundle --outdir=public/assets --watch

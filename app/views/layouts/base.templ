@@ -1,0 +1,28 @@
+package layouts
+
+import "jobsearch/app/views/components"
+
+templ BaseLayout() {
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>JobSearch.wtf</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="public/assets/styles.css" type="text/css" rel="stylesheet" />
+  <script src="https://unpkg.com/htmx.org@2.0.1"
+    integrity="sha384-QWGpdj554B4ETpJJC9z+ZHJcA/i59TyjxEPXiiUgN2WmTyV5OEZWCD6gQhgkdpB/" crossorigin="anonymous"
+    defer></script>
+</head>
+@components.Navigation()
+
+<body x-data="{theme: 'dark'}" :class="theme">
+  <main class="flex-1 container ">
+    { children... }
+  </main>
+</body>
+@components.Footer()
+
+</html>
+}

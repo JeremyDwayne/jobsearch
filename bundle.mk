@@ -6,7 +6,7 @@ TAGS='static,osuergo,netgo'
 EXTLDFLAGS="-static -Oz -s"
 LDFLAGS='-linkmode=external -extldflags $(EXTLDFLAGS)'
 build:
-	@npm run build:tailwind
+	@npm run build
 	@templ generate
 	@go build -tags $(TAGS) -ldflags $(LDFLAGS) -o bin/app_prod cmd/app/main.go
 	@upx bin/app_prod
