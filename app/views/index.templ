@@ -28,7 +28,7 @@ templ Index() {
 						</a>
 					</div>
 				</div>
-				<section class="glow glass-container mx-auto my-16 w-fit bg-secondary py-8 text-white">
+				<section class="glow glass-container mx-auto my-16 w-fit py-8 text-white">
 					<div class="container flex flex-wrap pb-12 pt-4">
 						<h2 class="my-2 w-full text-center text-5xl font-bold leading-tight">
 							Features
@@ -41,20 +41,20 @@ templ Index() {
 								<div class="my-5 px-6 text-gray-800">
 									<ul class="flex-1 space-y-2.5 leading-relaxed">
 										<li class="flex items-center gap-2">
-											@components.Check("text-green-400")
+											@components.Check()
 											Track job applications and scheduled interviews
 										</li>
 										<li class="flex items-center gap-2">
-											@components.Check("text-green-400")
+											@components.Check()
 											Capturing insightful notes and conduct retrospectives
 										</li>
 										<li class="flex items-center gap-2">
-											@components.Check("text-green-400")
+											@components.Check()
 											Rank companies and offers to help make informed career
 											choices
 										</li>
 										<li class="flex items-center gap-2">
-											@components.Check("text-green-400")
+											@components.Check()
 											Compare your current company to those you&apos;re
 											interviewing with
 										</li>
@@ -67,24 +67,24 @@ templ Index() {
 								<div class="my-5 px-6 text-gray-800">
 									<ul class="flex-1 space-y-2.5 leading-relaxed">
 										<li class="flex items-center gap-2">
-											@components.Check("text-green-400")
+											@components.Check()
 											Discover skill gaps to focus your studies for the next
 											interview
 										</li>
 										<li class="flex items-center gap-2">
-											@components.Check("text-green-400")
+											@components.Check()
 											Eliminate ghosting through automated reminders for
 											proactive follow-ups
 										</li>
 										<li class="flex items-center gap-2">
-											@components.Cross("text-rose-400")
+											@components.Cross()
 											No more manual spreadsheets or digging through email
 											threads
 										</li>
 										<li class="flex items-center gap-2">
-											@components.Cross("text-rose-400")
+											@components.Cross()
 											Stop wasting time on repetitive tasks and focus on landing
-											your dream job
+											your dream job.
 										</li>
 									</ul>
 								</div>
@@ -92,7 +92,122 @@ templ Index() {
 						</div>
 					</div>
 				</section>
-				<!-- <Pricing /> -->
+				<section class="w-full overflow-hidden" id="pricing">
+					<div class="px-8">
+						<div class="mb-20 flex w-full flex-col text-center">
+							<div class="mb-4 ">
+								<div class="badge badge-accent animate-pulse whitespace-nowrap">
+									✨ Launch discount — 50% OFF ✨
+								</div>
+							</div>
+							<h2 class="mx-auto mb-8 max-w-3xl text-3xl font-bold tracking-tight lg:text-5xl ">
+								Stop missing out on job opportunities
+							</h2>
+							<div class="mx-auto max-w-md text-primary/90">
+								Streamline the entire process and enable yourself to navigate your
+								career with clarity and confidence.
+							</div>
+						</div>
+						<div class="relative mb-16 flex flex-col items-center justify-center gap-8 lg:flex-row lg:items-stretch">
+							<div class="relative w-full max-w-lg">
+								<div class="bg-base-200 relative z-10 flex h-full flex-col gap-5 rounded-lg p-8 lg:gap-8">
+									<div class="flex flex-wrap gap-2">
+										<div class="mb-[4px] flex flex-col justify-end text-lg ">
+											<p class="relative">
+												<span class="text-slate-500/80 line-through">$10</span>
+											</p>
+										</div>
+										<p class="text-5xl font-extrabold tracking-tight">$5</p>
+										<div class="mb-[4px] flex flex-col justify-end">
+											<p class="text-slate-content/60 text-xs font-semibold uppercase">
+												USD/month
+											</p>
+										</div>
+									</div>
+									<ul class="flex-1 space-y-2.5 text-base leading-relaxed">
+										<li class="flex items-center gap-2">
+											@components.Check()
+											<span>Access to all features</span>
+										</li>
+										<li class="flex items-center gap-2">
+											@components.Check()
+											<span>Pay as you go, cancel when you land your job!</span>
+										</li>
+									</ul>
+									<div class="space-y-2 grid">
+										<a
+											class="py-2 rounded hover:border-pink-400 bg-transparent border border-secondary justify-items-stretch text-center"
+											href="#"
+										>
+											Get JobSearch
+											<span class="ml-2">
+												@components.Logo()
+											</span>
+										</a>
+										<p class=" text-slate-content-secondary relative text-center text-sm font-medium">
+											Billed monthly,
+											<span class="underline">cancel anytime</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="relative w-full max-w-lg">
+								<div class="absolute left-1/2 top-0 z-20 -translate-x-1/2 -translate-y-1/2">
+									<span class="badge whitespace-nowrap border-0 bg-green-200 p-1 text-xs font-medium text-secondary">
+										LIFETIME ACCESS
+									</span>
+								</div>
+								<div class="absolute -inset-[1px] z-10 rounded-[9px] border-2 border-green-200"></div>
+								<div class="bg-base-200 relative z-10 flex h-full flex-col gap-5 rounded-lg p-8 lg:gap-8">
+									<div class="flex flex-wrap gap-2">
+										<div class="mb-[4px] flex flex-col justify-end text-lg ">
+											<p class="relative">
+												<span class="text-slate-500/80 line-through">$199</span>
+											</p>
+										</div>
+										<p class="text-5xl font-extrabold tracking-tight">$99</p>
+										<div class="mb-[4px] flex flex-col justify-end">
+											<p class="text-slate-content/60 text-xs font-semibold uppercase">
+												USD
+											</p>
+										</div>
+									</div>
+									<ul class="flex-1 space-y-2.5 text-base leading-relaxed">
+										<li class="flex items-center gap-2">
+											@components.Check()
+											<span>Access to all current and future features</span>
+										</li>
+										<li class="flex items-center gap-2">
+											@components.Check()
+											<span>
+												<span class="bg-green-200 p-1 text-secondary">
+													Lifetime
+												</span>{ " " }
+												access with a no recurring fees
+											</span>
+										</li>
+									</ul>
+									<div class="space-y-2 grid">
+										<a
+											class="py-2 rounded hover:border-pink-400 bg-transparent border border-secondary justify-items-stretch text-center"
+											href="#"
+										>
+											Get JobSearch
+											<span class="ml-2">
+												@components.Logo()
+											</span>
+										</a>
+										<p class=" text-slate-content-secondary relative text-center text-sm font-medium">
+											One-time payment, then
+											<span class="underline">it&apos;s yours forever</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mx-auto mt-16 max-w-md space-y-4 md:mt-24 md:space-y-6"></div>
+				</section>
 			</div>
 		</div>
 	}
